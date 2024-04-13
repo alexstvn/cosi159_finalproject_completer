@@ -55,8 +55,9 @@ newmodel = model;
 print(newmodel);
 feature_vector = np.zeros((2386,4096));
 count = 0;
+load_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/"
 # get the path/directory
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/Faces";
+folder_dir = load_dir + "Faces";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -67,7 +68,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/Leopards";
+folder_dir = load_dir + "Leopards";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -78,7 +79,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/Motorbikes";
+folder_dir = load_dir + "Motorbikes";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -89,7 +90,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/binocular";
+folder_dir = load_dir + "binocular";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -100,7 +101,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/brain";
+folder_dir = load_dir + "brain";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -111,7 +112,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/camera";
+folder_dir = load_dir + "camera";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -122,7 +123,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/car_side";
+folder_dir = load_dir + "car_side";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -133,7 +134,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/dollar_bill";
+folder_dir = load_dir + "dollar_bill";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -144,7 +145,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/ferry";
+folder_dir = load_dir + "ferry";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -155,7 +156,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/garfield";
+folder_dir = load_dir + "garfield";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -166,7 +167,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/hedgehog";
+folder_dir = load_dir + "hedgehog";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -177,7 +178,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/pagoda";
+folder_dir = load_dir + "pagoda";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -188,7 +189,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/rhino";
+folder_dir = load_dir + "rhino";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -199,7 +200,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/snoopy";
+folder_dir = load_dir + "snoopy";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -210,7 +211,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/stapler";
+folder_dir = load_dir + "stapler";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -221,7 +222,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/stop_sign";
+folder_dir = load_dir + "stop_sign";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -232,7 +233,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/water_lilly";
+folder_dir = load_dir + "water_lilly";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -243,7 +244,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/windsor_chair";
+folder_dir = load_dir + "windsor_chair";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -254,7 +255,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/wrench";
+folder_dir = load_dir + "wrench";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);
@@ -265,7 +266,7 @@ for images in os.listdir(folder_dir):
     feature_vector[count,:] = np.squeeze(output.detach().numpy(),0);
     count = count + 1;
     print(count);
-folder_dir = "C:/Users/Administrator/Downloads/archive (1)/caltech-101/yin_yang";
+folder_dir = load_dir + "yin_yang";
 for images in os.listdir(folder_dir):
     image = os.path.join(folder_dir, images)
     I = Image.open(image);

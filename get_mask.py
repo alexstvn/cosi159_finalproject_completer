@@ -29,12 +29,12 @@ def get_mask(view_num, data_len, missing_rate):
         view_preserve = enc.fit_transform(randint(0, view_num, size=(data_len, 1))).toarray()
         one_num = view_num * data_len * one_rate - data_len
         ratio = one_num / (view_num * data_len)
-        matrix_iter = (randint(0, 100, size=(data_len, view_num)) < int(ratio * 100)).astype(np.int)
-        a = np.sum(((matrix_iter + view_preserve) > 1).astype(np.int))
+        matrix_iter = (randint(0, 100, size=(data_len, view_num)) < int(ratio * 100)).astype(int)
+        a = np.sum(((matrix_iter + view_preserve) > 1).astype(int))
         one_num_iter = one_num / (1 - a / one_num)
         ratio = one_num_iter / (view_num * data_len)
-        matrix_iter = (randint(0, 100, size=(data_len, view_num)) < int(ratio * 100)).astype(np.int)
-        matrix = ((matrix_iter + view_preserve) > 0).astype(np.int)
+        matrix_iter = (randint(0, 100, size=(data_len, view_num)) < int(ratio * 100)).astype(int)
+        matrix = ((matrix_iter + view_preserve) > 0).astype(int)
         ratio = np.sum(matrix) / (view_num * data_len)
         error = abs(one_rate - ratio)
 
